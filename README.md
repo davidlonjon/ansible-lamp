@@ -57,7 +57,7 @@ This is WIP.
 
 ## Installation
 
-1 .Clone the repo
+1. Clone the repo
 
 ```
 $ git clone git@github.com:davidlonjon/ansible-quick-lamp.git
