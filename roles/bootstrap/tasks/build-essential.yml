@@ -1,0 +1,12 @@
+---
+
+- name: Install build-essential related package
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+    - autoconf
+    - binutils-doc
+    - bison
+    - build-essential
+    - flex
+    - gettext
+    - ncurses-dev

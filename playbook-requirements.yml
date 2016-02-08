@@ -1,0 +1,23 @@
+# Ntp
+- src: resmo.ntp
+
+# timezone
+- src: Stouts.timezone
+
+# locale
+- src: tersmitten.locales
+
+# apache
+- src: geerlingguy.apache
+
+# apache
+- src: ANXS.mysql
+
+# php
+- src: kosssi.php
+
+# composer
+- src: kosssi.composer
+
+# Postfix
+- src: Stouts.postfix

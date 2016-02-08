@@ -1,0 +1,30 @@
+---
+base_host_name: local-dev
+add_build_essential: true
+ntp_config_server: [asia.pool.ntp.org]
+locales_present: [en_US.UTF-8]
+timezone_timezone: Asia/Seoul
+postfix_relayhost: "smtp.server.com"
+postfix_smtp_sasl_user: username
+postfix_smtp_sasl_password: xxxxxxx
+
+# List of databases to be created (optional)
+mysql_databases:
+  - name: db_name_to_create
+    collation: "utf8_general_ci"        # optional, defaults to "utf8_general_ci"
+    encoding: "utf8"                    # optional, defaults to "utf8"
+
+# List of users to be created (optional)
+mysql_users:
+  - name: sql_username
+    pass: sequel_password
+    priv: "*.*:ALL"                     # optional, defaults to "*.*:ALL"
+    host: "%"                           # optional, defaults to "localhost"
+
+apache_vhosts:
+  # Additional optional properties: 'serveradmin, serveralias, extra_parameters'.
+  - servername: "xxxx.xxx"
+    documentroot: "path_to_document_root"
+    extra_parameters: |
+          ErrorLog ${APACHE_LOG_DIR}/vhost_name-error.log
+          CustomLog ${APACHE_LOG_DIR}/vhost_name-access.log combined

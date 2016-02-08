@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  sudo: yes
+  remote_user: vagrant
+  vars_files:
+    - ../vars/webservers.yml
+    - ../vars/dbservers.yml
+  roles:
+    - role: geerlingguy.apache
+    - role: ANXS.mysql
+    - role: kosssi.php
+    - role: kosssi.composer
+    - role: Stouts.postfix

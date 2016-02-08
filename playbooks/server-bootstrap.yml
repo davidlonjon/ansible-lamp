@@ -1,0 +1,9 @@
+---
+- hosts: local_dev
+  sudo: yes
+  remote_user: vagrant
+  roles:
+    - role: bootstrap
+    - role: resmo.ntp
+    - role: Stouts.timezone
+    - role: tersmitten.locales

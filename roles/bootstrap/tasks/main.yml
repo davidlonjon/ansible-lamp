@@ -1,0 +1,7 @@
+---
+- include: hostname.yml
+- include: apt.yml
+- include: build-essential.yml
+  when: add_build_essential is defined and add_build_essential == 'true'
+- include: packages.yml
+# - include: secure.yml

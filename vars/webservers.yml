@@ -1,0 +1,32 @@
+apache_listen_port: 8080
+apache_listen_port_ssl: 8443
+apache_mods_enabled:
+  - rewrite.load
+  - ssl.load
+apache_mods_disabled: []
+apache_state: started
+apache_ignore_missing_ssl_certificate: true
+
+php_repository: ppa:ondrej/php5
+php_timezone: Asia/Seoul
+php_install:
+  - php5
+  - php5-xdebug
+  - php5-curl
+  - php5-mysql
+php_configure:
+  - file: /etc/php5/cli/php.ini
+    values:
+      - { section: date, key: date.timezone, value: '{{ php_timezone }}' }
+  - file: /etc/php5/mods-available/xdebug.ini
+    values:
+      - { section: date, key: date.timezone, value: '{{ php_timezone }}' }
+      - { section: xdebug, key: xdebug.idekey, value: my-idekey }
+
+composer_path_env: true
+composer_home_path: /opt/composer
+composer_home_owner: vagrant
+composer_home_group: vagrant
+composer_global_packages:
+  phpunit/phpunit: "5.1.*"
+  phing/phing: "2.*"

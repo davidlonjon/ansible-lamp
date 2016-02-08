@@ -1,0 +1,4 @@
+---
+- name: set hostname
+  hostname: name={{ base_host_name }}
+  when: base_host_name is defined
