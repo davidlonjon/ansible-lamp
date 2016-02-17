@@ -8,3 +8,4 @@
     - role: resmo.ntp
     - role: Stouts.timezone
     - role: tersmitten.locales
+    - role: opdavies.oh-my-zsh
