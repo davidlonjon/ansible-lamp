@@ -66,7 +66,7 @@ This is WIP.
 2. Install ansible roles
 
 	```
-	$ ansible-galaxy install -r playbook-requirements.yml -p ./roles/
+	$ ansible-galaxy install -r playbook-requirements.yml -p ./roles/vendors/
 	```
 
 3. Create the host file
