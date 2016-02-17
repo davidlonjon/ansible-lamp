@@ -75,12 +75,12 @@ This is WIP.
 	$ cp inventory/hosts.dist inventory/hosts
 	```
 
-	and uncomment the first line of the `local_dev` host and set the correct IP as well as if required the `ansible_ssh_user` and the `ansible_ssh_private_key_file`.
+	and uncomment the first line of the `dev` host and set the correct IP as well as if required the `ansible_ssh_user` and the `ansible_ssh_private_key_file`.
 
-4. Create the host var file for the `local_dev` host
+4. Create the host var file for the `dev` host
 
 	```
-	$ cp host_vars/local_dev/main.yml.dist host_vars/local_dev/main.yml
+	$ cp host_vars/dev/main.yml.dist host_vars/dev/main.yml
 	```
 
 	and setup the variable accordingly.

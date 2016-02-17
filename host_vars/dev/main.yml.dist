@@ -1,5 +1,5 @@
 ---
-base_host_name: local-dev
+base_host_name: dev
 add_build_essential: true
 ntp_config_server: [asia.pool.ntp.org]
 locales_present: [en_US.UTF-8]
