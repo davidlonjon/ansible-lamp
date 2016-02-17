@@ -1,6 +1,6 @@
-# Ansible Quick LAMP setup for Vagrant
+# Ansible LAMP setup
 
-Allows to setup a lamp server using ansible. This is for development machine (on vagrant for example) only. 
+Allows to setup a LAMP server using Ansible. This is for development machine (on vagrant for example) only.
 
 It will install:
 
@@ -8,7 +8,7 @@ It will install:
 - MySql
 - Postfix
 - Php
-- Composer 
+- Composer
 
 A bunch of packages:
 
@@ -82,7 +82,7 @@ This is WIP.
 	```
 	$ cp host_vars/local_dev/main.yml.dist host_vars/local_dev/main.yml
 	```
-	
+
 	and setup the variable accordingly.
 
 ## Usage
