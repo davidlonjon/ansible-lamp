@@ -4,6 +4,13 @@ add_build_essential: true
 ntp_config_server: [asia.pool.ntp.org]
 locales_present: [en_US.UTF-8]
 timezone_timezone: Asia/Seoul
+
+# oh-my-zsh setup
+ohmyzsh_copy_zshrc: true
+ohmyzsh_change_shell: true
+ohmyzsh_users: ['vagrant']
+
+# Postfix setup
 postfix_relayhost: "smtp.server.com"
 postfix_smtp_sasl_user: username
 postfix_smtp_sasl_password: xxxxxxx
@@ -21,6 +28,7 @@ mysql_users:
     priv: "*.*:ALL"                     # optional, defaults to "*.*:ALL"
     host: "%"                           # optional, defaults to "localhost"
 
+# List of apache virtual hosts to be created (optional)
 apache_vhosts:
   # Additional optional properties: 'serveradmin, serveralias, extra_parameters'.
   - servername: "xxxx.xxx"
