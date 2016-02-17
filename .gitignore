@@ -27,5 +27,5 @@ Temporary Items
 # Ansible
 inventory/hosts
 roles/vendors
-host_vars/local_dev/main.yml
+host_vars/dev/main.yml
 

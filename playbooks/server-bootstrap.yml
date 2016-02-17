@@ -1,5 +1,5 @@
 ---
-- hosts: local_dev
+- hosts: dev
   sudo: yes
   remote_user: vagrant
   roles:
