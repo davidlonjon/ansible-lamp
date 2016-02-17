@@ -80,7 +80,7 @@ This is WIP.
 4. Create the host var file for the `dev` host
 
 	```
-	$ cp host_vars/dev/main.yml.dist host_vars/dev/main.yml
+	$ cp host_vars/dev/main.dist host_vars/dev/main.yml
 	```
 
 	and setup the variable accordingly.
