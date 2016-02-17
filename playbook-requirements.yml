@@ -21,3 +21,6 @@
 
 # Postfix
 - src: Stouts.postfix
+
+# Ohmyzsh
+- src: opdavies.oh-my-zsh
