@@ -11,3 +11,4 @@
     - role: kosssi.php
     - role: kosssi.composer
     - role: Stouts.postfix
+- include: server_bootstrap.yml
